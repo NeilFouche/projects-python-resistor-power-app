@@ -28,4 +28,10 @@ This documents the process to create and deploy a Streamlit application with the
   * Commit the initial code
     * Review code
     * Commit the code to the local repository
-      * Run `git commit -m "Initial commit: Minimal resistor power calculator app."
+      * Run `git commit -m "Initial commit: Minimal resistor power calculator app."`
+    * Create a remote repository
+      * On GitHub create a new repository and give a description
+    * Link your local repository to the remote repository
+      * Run `git remote add origin https://github.com/.../<repository-name>.git`
+    * Push the local state to the main branch of the remote repository
+      * Run `git push -u origin main`
