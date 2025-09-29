@@ -1,6 +1,10 @@
 # Creating a Streamlit App
 This documents the process to create and deploy a Streamlit application with the Streamlit Community Cloud.
 
+As an example, this app calculates the power dissipated through a resistor, based on the voltage applied to it
+and its rated resistance. The user specifies at least two parameters, voltage, current and resistance. The third is calculated automatically. To recalculate the power in terms of a different pair, the third should be set to 0. A plot shows the relationship of the power to the voltage for a given range of resistance values. The ranges are based around the specified voltage and resistance, where power (P) is calculated by:
+$$P = \frac{V^2}{R}$$
+
 ## 1. Create a project folder
 * Create a new project folder inside a Streamlit Apps repository on your machine.
 
