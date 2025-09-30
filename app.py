@@ -16,8 +16,8 @@ st.caption("""
     Set a value to 0 to calculate the power in terms of the other two (2) parameters.
 """)
 voltage = st.number_input("Voltage (V)", value=st.session_state.get("voltage", 10.0), help="e.g. 10")
-resistance = st.number_input("Resistance (Ω)", value=st.session_state.get("resistance", 0.0), help="e.g. 5")
-current = st.number_input("Current (A)", value=st.session_state.get("current", 2.0), step=0.001, format="%.3f", help="e.g. 2")
+resistance = st.number_input("Resistance (Ω)", value=st.session_state.get("resistance", 5.0), help="e.g. 5")
+current = st.number_input("Current (A)", value=st.session_state.get("current", 0.0), step=0.001, format="%.3f", help="e.g. 2")
 
 # Calculate power
 if st.button("Calculate Power", type="primary"):
